@@ -1,5 +1,5 @@
 body{
-    background-color: #222;
+    background-color: #262626;
 }
 a{
     text-decoration: none;
@@ -7,7 +7,7 @@ a{
 .clearfix { 
     zoom: 1
 }
-.clearfix:after { 
+.clearfix:after {
     content: " ";
     display: block;
     clear: both;
@@ -16,29 +16,34 @@ a{
     font-size: 0;
 }
 .header{
-    height: 50px;
-    line-height: 50px;
-    background-color: red;
+    height: 60px;
+    line-height: 60px;
+    background-color: #bd1a21;
+    overflow: hidden;
 }
 .header-inner{
+    background-color: #b3191f;
     width: 960px;
     margin-left: auto;
     margin-right: auto;
+    overflow: auto;
 }
 .header .logo{
     width: 200px;
     background: url(../images/logo.png) no-repeat;
+    margin-left: 10px;
 }
 .header .logo a{
     visibility: hidden;
 }
 .header-left li{
     float: left;
+    font-family: '微软雅黑' '宋体';
 }
 .header-left li a{
     display: inline-block;
     min-width: 100px;
-    color: #ddd;
+    color: #efc7c7;
     font-size: 20px;
     text-align: center;
     -moz-transition:    all .2s linear;
@@ -54,10 +59,12 @@ a{
 }
 .header-search{
     float: right;
+    margin-right: 10px;
 }
 .main-content{
     float: left;
-    width: 680px;
+    width: 630px;
+    margin-right: 28px;
 }
 .section{
     margin-top: 30px;
@@ -67,10 +74,12 @@ a{
     height: 30px;
     line-height: 30px;
     font-size: 25px;
-    color: red;
-    border-bottom: 1px solid red;
+    color: #bd1a21;
+    border-bottom: 1px solid #b3191f;
     position: relative;
     padding-bottom: 7px;
+    font-family: '微软雅黑' '宋体';
+    font-weight: 100;
 }
 .title .title-more{
     display: inline-block;
@@ -88,7 +97,7 @@ a{
 }
 .interactive-item{
     padding: 10px 0;
-    border-bottom: 1px solid #800;
+    border-bottom: 1px solid #393939;
     /* margin: 0px 10px; */
     /* clear:both; */
     overflow: auto;
@@ -102,6 +111,7 @@ a{
 .interactive-item .user-name{
     font-size: 13px;
     font-weight: bold;
+    color: #747474;
 }
 .interactive-item .comment{
     width: 490px;
@@ -112,14 +122,19 @@ a{
     position: absolute;
     right: 0px;
     top: 0px;
+    color: #525151;
+    font-size: 12px;
 }
 .interactive-item .comment .comment-content{
     margin-top: 10px;
 }
+.interactive-item .comment .comment-content a{
+    color:#a9a9a9;
+}
 .news .news-thumb{
     display: inline-block;
     float: left;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 .news .news-list{
     margin-top: 10px;
@@ -127,38 +142,46 @@ a{
 .news .news-item{
     padding: 10px;
     overflow: hidden;
-    background-color: #333;
+    background-color: #2f2f2f;
     margin-bottom: 20px;
     border-radius:5px;
 }
 .news .news-item:hover,
 .news .news-item:focus{
-    background-color: #444;
+    background-color: #424242;
 }
 .news .news-headline{
     margin-bottom: 5px;
     font-size: 16px;
+    font-weight: bold;
+}
+.news .news-headline a{
+    color: #c7c7c7;
 }
 .news .news-content{
     float: left;
-    width: 500px;
+    width: 440px;
     line-height: 25px;
     font-size: 14px;
+    color:#727171;
 }
 .container{
-    width: 960px;
+    width: 940px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
+    background-color: #242424;
+    
+    padding: 0 10px;
 }
 .right-side{
     float: left;
-    width: 270px;
+    width: 274px;
 }
 .team-select{
     background-color: #fff;
     width: 100%;
-    padding: 5px;
+    padding: 5px 0;
     margin: 20px 0;
 }
 .team-select .select-btn{
@@ -167,17 +190,16 @@ a{
     width: 261px;
     text-align: center;
     line-height: 32px;
-    background: url(../images/select.png);
+    background: url(../images/select.png) no-repeat;
     color: #ffffff;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.65);
-    background-color: #006dcc;
-    *background-color: #0044cc;
     margin: 0 auto;
 }
 .game-item{
     background-color: #ddd;
     padding: 10px;
     border-radius:5px;
+    margin-top: 10px;
 }
 .game-item a{
     color: black;
@@ -188,20 +210,30 @@ a{
 }
 .game-item .team{
     display: inline-block;
-    width: 80px;
+    width: 78px;
     text-align: center;
+}
+.game-item .team p{
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 7px;
 }
 .game-item .game-info{
     display: inline-block;
     width: 80px;
     text-align: center;
 }
+.game-item .game-info .game-date{
+    font-size: 12px;
+}
 .game-item .game-info .game-time{
     padding: 2px 5px;
     border-radius:3px;
     background-color: #444;
-    color: #ff0;
-    
+    color: #8bd210;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: bold;
 }
 .footer{
     height: 60px;
