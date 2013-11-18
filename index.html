@@ -43,21 +43,17 @@
                 <h1 class="title">球迷互动</h1>
                 <div class='list interactive-list'>
                     <div class="interactive-item">
-                        <div class="user-avatar">
-                            <a href="#" alt="user" s="" name=""><img src="./images/user-avatar.png" alt="user's name"></a>
-                        </div>
+                        <a class="user-avatar" href="#" title="user's name"><img src="./images/user-avatar.png" alt="user's name"></a>
                         <div class="comment">
-                            <span class="user-name">球迷小可爱</span>
+                            <a href="#" class="user-name">球迷小可爱</a>
                             <a href="#" class="vs-teams">皇家马德里 vs 塞维利亚</a>
                             <p class="comment-content"><a href='#' title="塞维利亚是c罗请来的演员吗？">塞维利亚是c罗请来的演员吗？</a></p>
                         </div>
                     </div>
                     <div class="interactive-item">
-                        <div >
-                            <a href="#"  class="user-avatar"><img src="./images/user-avatar.png" alt="user's name"></a>
-                        </div>
+                        <a class="user-avatar" href="#" title="user's name"><img src="./images/user-avatar.png" alt="user's name"></a>
                         <div class="comment">
-                            <span class="user-name">球迷小可爱</span>
+                            <a href="#" class="user-name">球迷小可爱</a>
                             <a href="#" class="vs-teams">皇家马德里 vs 塞维利亚</a>
                             <p class="comment-content"><a href='#' title="塞维利亚是c罗请来的演员吗？">塞维利亚是c罗请来的演员吗？</a></p>
                         </div>
@@ -87,6 +83,24 @@
                             </p>
                         </div>
                     </div>
+                    <div class="news-item">
+                        <a class="news-thumb" href="#"><img src="./images/news-thumb.png" alt="a news headline"></a>
+                        <div class="news-content">
+                            <h3 class="news-headline"><a href="#" title="中国队同时好局客场1：1战平印尼">中国队同时好局客场1：1战平印尼</a></h3>
+                            <p class="news-text">
+                                离开啦时间地方了解，阿斯顿法律空间阿隆索地方，阿拉斯加地方啦是。啊时间的法律。啊时间地方啦是的法律了空间离开静安寺地方离开了卡就是的法律静安寺了地方。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <a class="news-thumb" href="#"><img src="./images/news-thumb.png" alt="a news headline"></a>
+                        <div class="news-content">
+                            <h3 class="news-headline"><a href="#" title="中国队同时好局客场1：1战平印尼">中国队同时好局客场1：1战平印尼</a></h3>
+                            <p class="news-text">
+                                离开啦时间地方了解，阿斯顿法律空间阿隆索地方，阿拉斯加地方啦是。啊时间的法律。啊时间地方啦是的法律了空间离开静安寺地方离开了卡就是的法律静安寺了地方。
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- end of news -->
@@ -95,11 +109,179 @@
         <div class="right-side">
             <h1 class="title">最新赛程<a class="title-more" href="#">more</a></h1>
             <div class="team-select">
-                <a class="select-btn btn" href="#">选择球队</a>
-                <div class="team-list">
+                <a class="select-btn" href="#">选择球队</a>
+                <div class="team-list" id="team-list">
+                    <ul>
+                        <li class="sub-list-con show">
+                            <b class="match-name">热门球队</b>
+                            <ul class="sub-list show">
+                                <li class="team-name">皇家马德里</li>
+                                <li class="team-name">巴萨罗纳</li>
+                                <li class="team-name">广州恒大</li>
+                                <li class="team-name">多特尔蒙</li>
+                                <li class="team-name">阿森纳</li>
+                                <li class="team-name">利物浦</li>
+                                <li class="team-name">曼联</li>
+                                <li class="team-name">AC米兰</li>
+                                <li class="team-name">国际米兰</li>
+                                <li class="team-name">那不勒斯</li>
+                                <li class="team-name">那不勒斯</li>
+                                <li class="team-name">那不勒斯</li>
+                                <li class="team-name">那不勒斯</li>
+                                <li class="team-name">那不勒斯</li>
+                                <li class="team-name">那不勒斯</li>
+                            </ul>
+                        </li>
+                        <li class="sub-list-con">
+                            <b class="match-name">超级联赛</b>
+                            <ul class="sub-list">
+                                <li class="team-name">皇家马德里</li>
+                                <li class="team-name">巴萨罗纳</li>
+                                <li class="team-name">广州恒大</li>
+                                <li class="team-name">多特尔蒙</li>
+                                <li class="team-name">阿森纳</li>
+                                <li class="team-name">利物浦</li>
+                                <li class="team-name">曼联</li>
+                                <li class="team-name">AC米兰</li>
+                                <li class="team-name">国际米兰</li>
+                                <li class="team-name">那不勒斯</li>
+                            </ul>
+                        </li>
+                        <li class="sub-list-con">
+                            <b class="match-name">西甲联赛</b>
+                        </li>
+                        <li class="sub-list-con">
+                            <b class="match-name">英超联赛</b>
+                        </li>
+                        <li class="sub-list-con">
+                            <b class="match-name">法甲联赛</b>
+                        </li>
+                        <li class="sub-list-con">
+                            <b class="match-name">欧洲联赛</b>
+                        </li>
+                        <li class="sub-list-con">
+                            <b class="match-name">欧洲冠军联赛</b>
+                        </li>
+                        <li class="sub-list-con">
+                            <b class="match-name">意甲联赛</b>
+                        </li>
+                        <li class="sub-list-con">
+                            <b class="match-name">德甲联赛</b>
+                        </li>
+                        <li class="sub-list-con">
+                            <b class="match-name">亚洲冠军联赛</b>
+                        </li>
+                        <li class="sub-list-con">
+                            <b class="match-name">世界杯非洲区</b>
+                        </li>
+                        <li class="sub-list-con">
+                            <b class="match-name">世界杯资格赛</b>
+                        </li>
+                        <li class="sub-list-con">
+                            <b class="match-name">世界杯欧洲资格赛</b>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="game-list">
+                <div class="game-item">
+                    <a class="team team-left" href="#" title="team's name">
+                        <img src="./images/team-logo-hd.png" alt="team" s="" name="">
+                        <p class="team-name">辽宁宏远</p>
+                    </a>
+                    <a href="#" class="game-info">
+                        <b class="game-time">19:20</b>
+                        <p class="game-date">2013-11-18</p>
+                    </a>
+                    <a class="team team-right" href="#" title="team's name">
+                        <img src="./images/team-logo-hd.png" alt="team" s="" name="">
+                        <p class="team-name">广东恒大</p>
+                    </a>
+                </div>
+                <div class="game-item">
+                    <a class="team team-left" href="#" title="team's name">
+                        <img src="./images/team-logo-hd.png" alt="team" s="" name="">
+                        <p class="team-name">辽宁宏远</p>
+                    </a>
+                    <a href="#" class="game-info">
+                        <b class="game-time">19:20</b>
+                        <p class="game-date">2013-11-18</p>
+                    </a>
+                    <a class="team team-right" href="#" title="team's name">
+                        <img src="./images/team-logo-hd.png" alt="team" s="" name="">
+                        <p class="team-name">广东恒大</p>
+                    </a>
+                </div>
+                <div class="game-item">
+                    <a class="team team-left" href="#" title="team's name">
+                        <img src="./images/team-logo-hd.png" alt="team" s="" name="">
+                        <p class="team-name">辽宁宏远</p>
+                    </a>
+                    <a href="#" class="game-info">
+                        <b class="game-time">19:20</b>
+                        <p class="game-date">2013-11-18</p>
+                    </a>
+                    <a class="team team-right" href="#" title="team's name">
+                        <img src="./images/team-logo-hd.png" alt="team" s="" name="">
+                        <p class="team-name">广东恒大</p>
+                    </a>
+                </div>
+                <div class="game-item">
+                    <a class="team team-left" href="#" title="team's name">
+                        <img src="./images/team-logo-hd.png" alt="team" s="" name="">
+                        <p class="team-name">辽宁宏远</p>
+                    </a>
+                    <a href="#" class="game-info">
+                        <b class="game-time">19:20</b>
+                        <p class="game-date">2013-11-18</p>
+                    </a>
+                    <a class="team team-right" href="#" title="team's name">
+                        <img src="./images/team-logo-hd.png" alt="team" s="" name="">
+                        <p class="team-name">广东恒大</p>
+                    </a>
+                </div>
+                <div class="game-item">
+                    <a class="team team-left" href="#" title="team's name">
+                        <img src="./images/team-logo-hd.png" alt="team" s="" name="">
+                        <p class="team-name">辽宁宏远</p>
+                    </a>
+                    <a href="#" class="game-info">
+                        <b class="game-time">19:20</b>
+                        <p class="game-date">2013-11-18</p>
+                    </a>
+                    <a class="team team-right" href="#" title="team's name">
+                        <img src="./images/team-logo-hd.png" alt="team" s="" name="">
+                        <p class="team-name">广东恒大</p>
+                    </a>
+                </div>
+                <div class="game-item">
+                    <a class="team team-left" href="#" title="team's name">
+                        <img src="./images/team-logo-hd.png" alt="team" s="" name="">
+                        <p class="team-name">辽宁宏远</p>
+                    </a>
+                    <a href="#" class="game-info">
+                        <b class="game-time">19:20</b>
+                        <p class="game-date">2013-11-18</p>
+                    </a>
+                    <a class="team team-right" href="#" title="team's name">
+                        <img src="./images/team-logo-hd.png" alt="team" s="" name="">
+                        <p class="team-name">广东恒大</p>
+                    </a>
+                </div>
+                <div class="game-item">
+                    <a class="team team-left" href="#" title="team's name">
+                        <img src="./images/team-logo-hd.png" alt="team" s="" name="">
+                        <p class="team-name">辽宁宏远</p>
+                    </a>
+                    <a href="#" class="game-info">
+                        <b class="game-time">19:20</b>
+                        <p class="game-date">2013-11-18</p>
+                    </a>
+                    <a class="team team-right" href="#" title="team's name">
+                        <img src="./images/team-logo-hd.png" alt="team" s="" name="">
+                        <p class="team-name">广东恒大</p>
+                    </a>
+                </div>
                 <div class="game-item">
                     <a class="team team-left" href="#" title="team's name">
                         <img src="./images/team-logo-hd.png" alt="team" s="" name="">
@@ -161,10 +343,11 @@
         <!-- end of right side -->
         <div class="clearfix"></div>
     </div>
-    <div class="clearfix"></div>
+    <!-- <div class="clearfix"></div> -->
     <div class="footer" role="contentinfo">
         <p class="copyright">Sponia &copy; 2013</p>
     </div>
+    <script src="./scripts/main.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
 
