@@ -194,10 +194,12 @@ a{
     width: 274px;
 }
 .team-select{
-    background-color: #fff;
     width: 100%;
     padding: 5px 0;
     margin: 20px 0;
+}
+.team-select.select-active{
+    background-color: #fff;
 }
 .team-select .select-btn{
     display: block;
@@ -217,6 +219,10 @@ a{
     padding-left: 7px;
     padding-bottom: 10px;
     padding: 10px 10px 10px 7px;
+    display: none;
+}
+.select-active .team-list{
+    display: block;
 }
 .team-list .match-name{
     background-color: #ccc;
@@ -249,7 +255,7 @@ a{
     padding: 5px;
     padding-bottom: 10px;
 }
-.team-list .sub-list.show{
+.team-list .show .sub-list{
     display: block;
 }
 .team-list .sub-list .team-name{
@@ -262,8 +268,9 @@ a{
 }
 .team-list .sub-list .team-name:hover,
 .team-list .sub-list .team-name:focus{
-    background-color: #efefef;
+    background-color: #eef;
     color: #000;
+    cursor: pointer;
 }
 .game-item{
     background-color: #ddd;
