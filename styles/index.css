@@ -1,0 +1,104 @@
+a{
+    text-decoration: none;
+}
+.clearfix { 
+    zoom: 1
+}
+.clearfix:after { 
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    font-size: 0;
+}
+.header{
+    height: 50px;
+    line-height: 50px;
+    background-color: red;
+}
+.header-inner{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header .logo{
+    width: 200px;
+    background: url(../images/logo.png) no-repeat;
+}
+.header .logo a{
+    visibility: hidden;
+}
+.header-left li{
+    float: left;
+}
+.header-left li a{
+    display: inline-block;
+    min-width: 100px;
+    color: #ddd;
+    font-size: 20px;
+    text-align: center;
+    -moz-transition:    all .2s linear;
+    -ms-transition:     all .2s linear;
+    -o-transition:      all .2s linear;
+    -webkit-transition: all .2s linear;
+    transition:         all .2s linear;
+}
+.header-left .sub-site a:hover,
+.header-left .sub-site a:focus{
+    background-color: #900;
+    color: white;
+}
+.header-search{
+    float: right;
+}
+.main-content{
+    float: left;
+    width: 600px;
+}
+.title{
+    height: 35px;
+    line-height: 35px;
+    font-size: 25px;
+    color: red;
+    border-bottom: 1px solid red;
+}
+.title .title-more{
+    display: inline-block;
+    text-indent: -99999px;
+}
+.interactive-list{
+    padding: 0px 10px;
+}
+.interactive-item{
+    padding: 10px 0;
+    border-bottom: 1px solid #800;
+    /* margin: 0px 10px; */
+    /* clear:both; */
+    overflow: auto;
+}
+.interactive-item .user-avatar{
+    float: left;
+}
+.interactive-item .comment{
+    width: 490px;
+    float: left;
+    position: relative;
+}
+.interactive-item .comment .vs-teams{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.interactive-item .comment .comment-content{
+    margin-top: 10px;
+}
+.container{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.right-side{
+    float: left;
+    width: 250px;
+}
