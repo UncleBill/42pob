@@ -1,3 +1,6 @@
+body{
+    background-color: #222;
+}
 a{
     text-decoration: none;
 }
@@ -54,18 +57,31 @@ a{
 }
 .main-content{
     float: left;
-    width: 600px;
+    width: 680px;
+}
+.section{
+    margin-top: 30px;
+
 }
 .title{
-    height: 35px;
-    line-height: 35px;
+    height: 30px;
+    line-height: 30px;
     font-size: 25px;
     color: red;
     border-bottom: 1px solid red;
+    position: relative;
+    padding-bottom: 7px;
 }
 .title .title-more{
     display: inline-block;
+    height: 20px;
+    width: 34px;
+    background: url(../images/more.png) no-repeat;
+    background-position: center center;
     text-indent: -99999px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
 .interactive-list{
     padding: 0px 10px;
@@ -76,9 +92,16 @@ a{
     /* margin: 0px 10px; */
     /* clear:both; */
     overflow: auto;
+    font-size: 14px;
 }
 .interactive-item .user-avatar{
+    display: inline-block;
     float: left;
+    margin-right: 15px;
+}
+.interactive-item .user-name{
+    font-size: 13px;
+    font-weight: bold;
 }
 .interactive-item .comment{
     width: 490px;
@@ -93,12 +116,97 @@ a{
 .interactive-item .comment .comment-content{
     margin-top: 10px;
 }
+.news .news-thumb{
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+}
+.news .news-list{
+    margin-top: 10px;
+}
+.news .news-item{
+    padding: 10px;
+    overflow: hidden;
+    background-color: #333;
+    margin-bottom: 20px;
+    border-radius:5px;
+}
+.news .news-item:hover,
+.news .news-item:focus{
+    background-color: #444;
+}
+.news .news-headline{
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.news .news-content{
+    float: left;
+    width: 500px;
+    line-height: 25px;
+    font-size: 14px;
+}
 .container{
     width: 960px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 25px;
 }
 .right-side{
     float: left;
-    width: 250px;
+    width: 270px;
+}
+.team-select{
+    background-color: #fff;
+    width: 100%;
+    padding: 5px;
+    margin: 20px 0;
+}
+.team-select .select-btn{
+    display: block;
+    height: 32px;
+    width: 261px;
+    text-align: center;
+    line-height: 32px;
+    background: url(../images/select.png);
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.65);
+    background-color: #006dcc;
+    *background-color: #0044cc;
+    margin: 0 auto;
+}
+.game-item{
+    background-color: #ddd;
+    padding: 10px;
+    border-radius:5px;
+}
+.game-item a{
+    color: black;
+}
+.game-item:hover,
+.game-item:focus{
+    background-color: #fff;
+}
+.game-item .team{
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+}
+.game-item .game-info{
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+}
+.game-item .game-info .game-time{
+    padding: 2px 5px;
+    border-radius:3px;
+    background-color: #444;
+    color: #ff0;
+    
+}
+.footer{
+    height: 60px;
+    line-height: 60px;
+    background-color: #000;
+    text-align: center;
+    color: white;
 }

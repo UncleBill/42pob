@@ -33,10 +33,6 @@
         <div class="main-content left-content">
             <div class="slider">
                 <ul>
-                    <li class="slider-item"><a href="#"><img src="./images/slider.jpg" alt="slider1"></a></li>
-                    <li class="slider-item"><a href="#"><img src="./images/slider.jpg" alt="slider2"></a></li>
-                    <li class="slider-item"><a href="#"><img src="./images/slider.jpg" alt="slider3"></a></li>
-                    <li class="slider-item"><a href="#"><img src="./images/slider.jpg" alt="slider4"></a></li>
                     <li class="slider-item"><a href="#"><img src="./images/slider.jpg" alt="slider5"></a></li>
                 </ul>
             </div>
@@ -48,7 +44,7 @@
                 <div class='list interactive-list'>
                     <div class="interactive-item">
                         <div class="user-avatar">
-                            <a href="#" alt="user" s="" name=""><img src="./images/user-avatar.jpg" alt="user's name"></a>
+                            <a href="#" alt="user" s="" name=""><img src="./images/user-avatar.png" alt="user's name"></a>
                         </div>
                         <div class="comment">
                             <span class="user-name">球迷小可爱</span>
@@ -57,8 +53,8 @@
                         </div>
                     </div>
                     <div class="interactive-item">
-                        <div class="user-avatar">
-                            <a href="#" alt="user" s="" name=""><img src="./images/user-avatar.jpg" alt="user's name"></a>
+                        <div >
+                            <a href="#"  class="user-avatar"><img src="./images/user-avatar.png" alt="user's name"></a>
                         </div>
                         <div class="comment">
                             <span class="user-name">球迷小可爱</span>
@@ -72,15 +68,24 @@
             <!-- start of news -->
             <div class="section news">
                 <h1 class="title">球坛动态<a class="title-more" href="#">more</a></h1>
-                <div class="news-item">
-                    <div class="news-img">
-                        <a href="#"><img src="./images/news-thumb.jpg" alt="a news headline"></a>
+                <div class='list news-list'>
+                    <div class="news-item">
+                        <a class="news-thumb" href="#"><img src="./images/news-thumb.png" alt="a news headline"></a>
+                        <div class="news-content">
+                            <h3 class="news-headline"><a href="#" title="中国队同时好局客场1：1战平印尼">中国队同时好局客场1：1战平印尼</a></h3>
+                            <p class="news-text">
+                                离开啦时间地方了解，阿斯顿法律空间阿隆索地方，阿拉斯加地方啦是。啊时间的法律。啊时间地方啦是的法律了空间离开静安寺地方离开了卡就是的法律静安寺了地方。
+                            </p>
+                        </div>
                     </div>
-                    <div class="news-content">
-                        <h3 class="news-headline"><a href="#" title="中国队同时好局客场1：1战平印尼">中国队同时好局客场1：1战平印尼</a></h3>
-                        <p class="news-text">
-                            离开啦时间地方了解，阿斯顿法律空间阿隆索地方，阿拉斯加地方啦是。啊时间的法律。啊时间地方啦是的法律了空间离开静安寺地方离开了卡就是的法律静安寺了地方。
-                        </p>
+                    <div class="news-item">
+                        <a class="news-thumb" href="#"><img src="./images/news-thumb.png" alt="a news headline"></a>
+                        <div class="news-content">
+                            <h3 class="news-headline"><a href="#" title="中国队同时好局客场1：1战平印尼">中国队同时好局客场1：1战平印尼</a></h3>
+                            <p class="news-text">
+                                离开啦时间地方了解，阿斯顿法律空间阿隆索地方，阿拉斯加地方啦是。啊时间的法律。啊时间地方啦是的法律了空间离开静安寺地方离开了卡就是的法律静安寺了地方。
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -89,19 +94,23 @@
         <!-- start of right side -->
         <div class="right-side">
             <h1 class="title">最新赛程<a class="title-more" href="#">more</a></h1>
-            <p><a class="select-btn btn" href="#">选择球队</a></p>
+            <div class="team-select">
+                <a class="select-btn btn" href="#">选择球队</a>
+                <div class="team-list">
+                </div>
+            </div>
             <div class="game-list">
                 <div class="game-item">
-                    <a class="team-left" href="#" title="team" s="" name="">
-                        <img src="./images/team-logo.png" alt="team" s="" name="">
+                    <a class="team team-left" href="#" title="team's name">
+                        <img src="./images/team-logo-hd.png" alt="team" s="" name="">
                         <p class="team-name">辽宁宏远</p>
                     </a>
                     <span class="game-info">
                         <b class="game-time">19:20</b>
-                        <div class="game-date">2013-11-18</div>
+                        <p class="game-date">2013-11-18</p>
                     </span>
-                    <a class="team-left" href="#" title="team" s="" name="">
-                        <img src="./images/team-logo.png" alt="team" s="" name="">
+                    <a class="team team-right" href="#" title="team's name">
+                        <img src="./images/team-logo-hd.png" alt="team" s="" name="">
                         <p class="team-name">广东恒大</p>
                     </a>
                 </div>
