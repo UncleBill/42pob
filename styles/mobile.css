@@ -1,0 +1,106 @@
+.container{
+    position: static;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+}
+.main-content{
+    margin-right: 0;
+    width: 96%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.section{
+    width: 100%;
+}
+.list{
+    width: 100%;
+}
+.title .title-more{
+    height: 30px;
+    width: 70px;
+    border-radius:2px;
+    background: yellowgreen;
+    text-indent: 0;
+    text-align: center;
+    color: white;
+    right: 10px;
+    top: -2px;
+    font-size: 15px;
+}
+.slider{
+    width: 100%;
+    overflow:hidden;
+    display: none;
+}
+.right-side{
+    float:left;
+    position:static;
+    width: 100%;
+}
+.team-select{
+    display: none;
+}
+.game-item .team{
+    width: 33%;
+}
+.game-item .game-info{
+    width: 30%;
+}
+.game-list .game-item:nth-child(n + 4){
+    display: none;
+}
+.interactive{
+    float: left;
+}
+.interactive-list{
+    padding: 0;
+}
+.interactive-item{
+    width: 100%;
+    /* position: relative; */
+}
+.interactive-item .user-avatar{
+    /* margin-right: -50px; */
+}
+.interactive-item .comment{
+    width: auto;
+    position: absolute;
+    left: 60px;
+}
+.interactive-item .comment .comment-content{
+    float: left;
+}
+.news{
+    float: left;
+}
+.news .news-thumb{
+    margin-right: -150px;
+}
+.news .news-content{
+    font-size: 16px;
+    width: auto;
+    margin-left: 150px;
+    text-overflow:ellipsis;
+}
+.news .news-content .news-text{
+    font-size: 16px;
+    height: 80px;
+    -webkit-text-overflow:clip;
+}
+.header{
+    background-image: url(../images/logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* pos */
+}
+.header-inner{
+    display: none;
+}
+.header-left{
+
+}
+.footer{
+    height: 60px;
+}

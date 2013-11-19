@@ -10,4 +10,8 @@
     $(".select-btn").bind('click', function () {
         $(".team-select").toggleClass('select-active');
     })
+    $(".team-select").blur(function () {
+        $(this).removeClass('select-active');
+    });
+
 })(jQuery);

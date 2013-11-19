@@ -6,6 +6,9 @@ a{
 }
 .clearfix { 
     zoom: 1;
+    display: block;
+    clear: both;
+    height: 0;
 }
 .clearfix:after {
     content: " ";
@@ -19,14 +22,13 @@ a{
     height: 60px;
     line-height: 60px;
     background-color: #bd1a21;
-    overflow: hidden;
 }
 .header-inner{
     background-color: #b3191f;
     width: 960px;
     margin-left: auto;
     margin-right: auto;
-    overflow: auto;
+    height: 60px;
 }
 .header .logo{
     width: 200px;
@@ -41,6 +43,8 @@ a{
     font-family: '微软雅黑' '宋体';
 }
 .header-left li a{
+    height: 60px;
+    line-height: 60px;
     display: inline-block;
     min-width: 100px;
     color: #efc7c7;
@@ -51,6 +55,10 @@ a{
     -o-transition:      all .2s linear;
     -webkit-transition: all .2s linear;
     transition:         all .2s linear;
+}
+.header-left .sub-site{
+    height: 60px;
+    overflow: hidden;
 }
 .header-left .sub-site a:hover,
 .header-left .sub-site a:focus{
@@ -63,7 +71,7 @@ a{
 }
 .main-content{
     float: left;
-    width: 630px;
+    /* width: 630px; */
     margin-right: 28px;
 }
 .section{
@@ -99,7 +107,6 @@ a{
     padding: 10px 0;
     border-bottom: 1px solid #393939;
     /* margin: 0px 10px; */
-    /* clear:both; */
     overflow: auto;
     font-size: 14px;
 }
@@ -107,6 +114,7 @@ a{
     display: inline-block;
     float: left;
     margin-right: 15px;
+    margin-right: -50px;
 }
 .interactive-item .user-name{
     font-size: 13px;
@@ -131,10 +139,11 @@ a{
 }
 .interactive-item .comment .vs-teams{
     position: absolute;
-    right: 0px;
+    right: 1px;
     top: 0px;
     color: #525151;
     font-size: 12px;
+    float: right;
 }
 .interactive-item .comment .comment-content{
     margin-top: 10px;
@@ -188,10 +197,7 @@ a{
     margin-top: 25px;
     background-color: #242424;
     padding: 0 10px 20px 10px;
-}
-.right-side{
-    float: left;
-    width: 274px;
+    position: relative;
 }
 .team-select{
     width: 100%;
@@ -323,4 +329,18 @@ a{
     text-align: center;
     background-color: #000;
     color: white;
+}
+.footer .copyright{
+    height: 60px;
+    line-height: 60px;
+}
+.container{
+    position: relative;
+}
+.right-side{
+    float: right;
+    width: 274px;
+    position: absolute;
+    right:10px;
+    top: 0px;
 }
