@@ -57,46 +57,61 @@
 .interactive-list{
     padding: 0;
 }
-.interactive-item{
-    width: 100%;
-    /* position: relative; */
-}
-.interactive-item .user-avatar{
-    /* margin-right: -50px; */
-}
-.interactive-item .comment{
-    width: auto;
-    position: absolute;
-    left: 60px;
-}
-.interactive-item .comment .comment-content{
-    float: left;
-}
 .news{
     float: left;
 }
 .news .news-thumb{
-    margin-right: -150px;
+    margin-right: -105px;
+}
+.news .news-headline{
+    margin-bottom: 0px;
+}
+.news .news-thumb img{
+    width: 105px;
+    height: 75px;
 }
 .news .news-content{
     font-size: 16px;
     width: auto;
-    margin-left: 150px;
+    margin-left: 120px;
     text-overflow:ellipsis;
 }
 .news .news-content .news-text{
     font-size: 16px;
-    height: 80px;
-    -webkit-text-overflow:clip;
+    height: 50px;
+    -webkit-text-overflow: ellipsis;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .header{
     background-image: url(../images/logo.png);
-    background-position: center center;
+    background-position: center 4px;
     background-repeat: no-repeat;
-    /* pos */
+    position: relative;
+    z-index:99999;
 }
-.header-inner{
+.collapse{
+    height: 35px;
+    width: 35px;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+}
+/* .header-inner{ */
+/*     display: none; */
+/* } */
+.header-inner li{
     display: none;
+    float: none;
+}
+.header-inner .header-left{
+    position: absolute;
+    top: 50px;
+    background-color: red;
+    z-inde: 99999;
+}
+.header-inner.show-sub-site .sub-site{
+    display: block;
 }
 .header-left{
 

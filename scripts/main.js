@@ -14,4 +14,9 @@
         $(this).removeClass('select-active');
     });
 
+    // collapse control
+    $('.collapse').click(function () {
+        $('.header-inner').toggleClass('show-sub-site');
+    })
+
 })(jQuery);

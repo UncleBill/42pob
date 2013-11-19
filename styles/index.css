@@ -32,7 +32,7 @@ a{
 }
 .header .logo{
     width: 200px;
-    background: url(../images/logo.png) no-repeat;
+    background: url(../images/logo.png) no-repeat center center;
     margin-left: 10px;
 }
 .header .logo a{
@@ -127,17 +127,12 @@ a{
 .news .news-headline a:focus,
 .game-item .team:hover .team-name,
 .game-item .team:focus .team-name,
-.comment .comment-content a:hover,
-.comment .comment-content a:focus{
+.interactive .comment-content a:hover,
+.interactive .comment-content a:focus{
     text-decoration:underline;
 }
 
-.interactive-item .comment{
-    width: 490px;
-    float: left;
-    position: relative;
-}
-.interactive-item .comment .vs-teams{
+.interactive-item .vs-teams{
     position: absolute;
     right: 1px;
     top: 0px;
@@ -145,10 +140,31 @@ a{
     font-size: 12px;
     float: right;
 }
-.interactive-item .comment .comment-content{
+.interactive-item{
+    position: relative;
+}
+.interactive-item .user-avatar{
+    /* margin-right: -50px; */
+}
+.interactive-item .user-name{
+    position: absolute;
+    left: 60px;
+    top: 10px;
+}
+.interactive-item .vs-teams{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}
+.interactive-item .comment-content{
+    position: absolute;
+    left: 60px;
+    top: 25px;
+}
+.interactive-item .comment-content{
     margin-top: 10px;
 }
-.interactive-item .comment .comment-content a{
+.interactive-item .comment-content a{
     color:#a9a9a9;
 }
 .news .news-thumb{
