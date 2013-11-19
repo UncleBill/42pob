@@ -30,6 +30,9 @@ a{
     margin-right: auto;
     height: 60px;
 }
+.header .collapse{
+    display: none;
+}
 .header .logo{
     width: 200px;
     background: url(../images/logo.png) no-repeat center center;
@@ -69,6 +72,28 @@ a{
     float: right;
     margin-right: 10px;
 }
+.header-search input{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    height: 30px;
+    width: 100px;
+    border-radius:5px;
+    padding-left: 10px;
+    background-image: url(../images/more.png);
+    background-position: 5px center;
+    background-repeat: no-repeat;
+
+    -moz-transition:    width .3s linear;
+    -ms-transition:     width .3s linear;
+    -o-transition:      width .3s linear;
+    -webkit-transition: width .3s linear;
+    transition:         width .3s linear;
+}
+.header-search input.focus{
+    width: 250px;
+    background-image: none;
+}
 .main-content{
     float: left;
     /* width: 630px; */
@@ -89,6 +114,9 @@ a{
     font-family: '微软雅黑' '宋体';
     font-weight: 100;
 }
+.title:hover{
+    cursor: default;
+}
 .title .title-more{
     display: inline-block;
     height: 20px;
@@ -102,6 +130,8 @@ a{
 }
 .interactive-list{
     padding: 0px 10px;
+    height: 136px;
+    overflow: hidden;
 }
 .interactive-item{
     padding: 10px 0;
@@ -137,7 +167,7 @@ a{
     right: 1px;
     top: 0px;
     color: #525151;
-    font-size: 12px;
+    font-size: 14px;
     float: right;
 }
 .interactive-item{
@@ -240,8 +270,13 @@ a{
     width: 150px;
     padding-left: 7px;
     padding-bottom: 10px;
-    padding: 10px 10px 10px 7px;
+    padding: 0px 10px 10px 7px;
     display: none;
+    -moz-box-shadow: 5px 6px 10px 2px rgba(0,0,0,.4);
+    -ms-box-shadow: 5px 6px 10px 2px rgba(0,0,0,.4);
+    -o-box-shadow: 5px 6px 10px 2px rgba(0,0,0,.4);
+    -webkit-box-shadow: 5px 6px 10px 2px rgba(0,0,0,.4);
+    box-shadow: 5px 6px 10px 2px rgba(0,0,0,.4);
 }
 .select-active .team-list{
     display: block;
@@ -263,20 +298,34 @@ a{
     cursor:pointer;
     background-color: #fff;
     color: #000;
-}
-.team-list li:hover .sub-list{
-    display: block;
+    z-index: 99999;
 }
 .team-list .sub-list{
     display: none;
     position: absolute;
     width: 130px;
-    left: 134px;
-    top: 0px;
+    left: 127px;
+    top: 0;
     background-color: #fff;
     padding: 5px;
     padding-bottom: 10px;
+    -moz-box-shadow: 5px 6px 10px 2px rgba(0,0,0,.4);
+    -ms-box-shadow: 5px 6px 10px 2px rgba(0,0,0,.4);
+    -o-box-shadow: 5px 6px 10px 2px rgba(0,0,0,.4);
+    -webkit-box-shadow: 5px 6px 10px 2px rgba(0,0,0,.4);
+    box-shadow: 5px 6px 10px 2px rgba(0,0,0,.4);
 }
+.team-list .sub-list.sub-list-btm{
+    bottom: 0;
+    top: auto;
+}
+.team-list .sub-list-con{
+    position: relative;
+}
+.team-list .show{
+    z-index: 9999999;
+}
+.team-list li:hover .sub-list,
 .team-list .show .sub-list{
     display: block;
 }
@@ -328,7 +377,9 @@ a{
     text-align: center;
 }
 .game-item .game-info .game-date{
-    font-size: 12px;
+    font-size: 13px;
+    color: #777;
+    font-family:Courier,"Courier New";
 }
 .game-item .game-info .game-time{
     padding: 2px 5px;
@@ -344,7 +395,7 @@ a{
     line-height: 60px;
     text-align: center;
     background-color: #000;
-    color: white;
+    color: #888;
 }
 .footer .copyright{
     height: 60px;
@@ -359,4 +410,49 @@ a{
     position: absolute;
     right:10px;
     top: 0px;
+}
+
+/* slider ==================== */
+#slider{
+    overflow:hidden;
+    width: 630px;
+    height: 295px;
+    background-color: #fff;
+    position: relative;
+}
+#slider .slider-inner{
+    width: 100000000px;
+}
+#slider .slider-item {
+    width: 620px;
+    height: 285px;
+    float: left;
+    padding: 5px;
+}
+#slider-controller{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+#slider-controller .slider-control-item{
+    display: inline-block;
+    background: #fff;
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+    height: 8px;
+    width: 8px;
+    margin-left: 8px;
+    float: left;
+    cursor: pointer;
+    -moz-transition:    opacity .1s linear;
+    -ms-transition:     opacity .1s linear;
+    -o-transition:      opacity .1s linear;
+    -webkit-transition: opacity .1s linear;
+    transition:         opacity .1s linear;
+}
+#slider-controller .slider-control-item:hover,
+#slider-controller .slider-control-item:focus,
+#slider-controller .slider-control-item.slider-item-cur{
+    opacity: 1;
+    filter:alpha(opacity=100);
 }
