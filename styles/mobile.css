@@ -110,6 +110,7 @@
     padding: 0;
     border: 0;
     position: absolute;
+    background: url(../images/collaspe.png) no-repeat center center;
 }
 .header-inner{
     background-image: url(../images/logo-m.png);
